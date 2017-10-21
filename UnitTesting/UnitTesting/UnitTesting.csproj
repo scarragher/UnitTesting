@@ -43,13 +43,15 @@
     <Compile Include="EventModel\Event.cs" />
     <Compile Include="EventModel\EventManager.cs" />
     <Compile Include="EventModel\IEventManager.cs" />
-    <Compile Include="EventModel\MockEventManager.cs" />
     <Compile Include="IPortfolioManager.cs" />
-    <Compile Include="MockPortfolioManager.cs" />
+    <Compile Include="Person.cs" />
     <Compile Include="Portfolio.cs" />
     <Compile Include="PortfolioManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Usage.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Transactions\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

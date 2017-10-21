@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace UnitTesting.EventModel
+namespace UnitTesting.EventModel.Tests
 {
     public class MockEventManager : IEventManager
     {

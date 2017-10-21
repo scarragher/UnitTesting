@@ -1,6 +1,8 @@
-﻿namespace UnitTesting
+﻿using System;
+
+namespace UnitTesting
 {
-    public class Portfolio
+    public class Portfolio : ICloneable
     {
 
         private static IPortfolioManager _manager;
@@ -20,6 +22,17 @@
             {
                 _manager = value;
             }
+        }
+
+        public Person PortfolioOwner { get; set; }
+
+        public Guid Id { get; set; }
+
+        public bool WasLoadedFromDatabase { get; set; }
+
+        public object Clone()
+        {
+            return new Portfolio() { Id = this.Id, PortfolioOwner = this.PortfolioOwner };
         }
     }
 }

@@ -20,9 +20,6 @@ namespace UnitTesting
             Event.Manager.AddEvent( "" );
             Event.Manager.GetEventById( "" );
 
-            // Unit testing
-            Portfolio.Manager = new MockPortfolioManager();
-            Event.Manager = new MockEventManager();
         }
     }
 }
